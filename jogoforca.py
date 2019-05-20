@@ -16,9 +16,10 @@ def desenha(erradas):
     return print( forca[len(erradas)] )
 
 def jogar_novamente():
-    r = 's'
-    r = input('Deseja jogar novamente(S/n)? ')
-    return 's' in r.lower()
+    global sorteada
+    sorteada = choice(palavras)
+    r = input('Deseja jogar novamente(Ss/nn)? ').lower()
+    return r in 'sim'
 
 def ganhou(sorteada, certas):
     return set(sorteada) == set(certas)
@@ -51,7 +52,5 @@ while r:
             else:
                 print('_', end = ' ')
         desenha(erradas)
-        
-     r = jogar_novamente()
+    r = jogar_novamente()
 
-#if jogar_novamente(r): 

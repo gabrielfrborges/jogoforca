@@ -1,4 +1,4 @@
-url= 'https://www.ime.usp.br/~pf/dicios/br-sem-acentos.txt'
+url = 'https://www.ime.usp.br/~pf/dicios/br-sem-acentos.txt'
 import requests
 from random import choice
 p = requests.get(url)
@@ -11,10 +11,10 @@ def escolhe():
     return choice(palavras)
 
 def desenha(erradas):
-    return print(forca[len(erradas)])
+    return print( forca[len(erradas)] )
 
 def jogar_novamente():
-    r=input('Deseja jogar novamente?')
+    r = input('Deseja jogar novamente?')
     return r in 'Sim'
     
 
@@ -24,28 +24,28 @@ def ganhou(sorteada, certas):
 def chute(letras):
     from string import ascii_letters ##punctuation
     while True:
-        x=input('Digite letra:')[0]
+        x = input('Digite letra:')[0]
         if x in letras:
             print('Letra repitida')
         elif x not in ascii_letters:
             print('Caracter inválido')
-        elif len(x)!=1:
+        elif len(x) != 1:
             print('Só uma letra1')
         else:
             return x
 
-forca = [''' ''',''' o ''',''' o_ ''',''' _o_ ''', '''_o_/''', '''\_o_/''']
-certas=erradas=''
+forca = [''' ''', ''' o ''', ''' o_ ''', ''' _o_ ''', '''_o_/''', '''\_o_/''']
+certas = erradas = ''
 
 ganhou(sorteada,certas)
 
-while not ganhou(sorteada,certas):
+while not ganhou(sorteada, certas):
     print(sorteada)
-    letra = chute(certas+erradas)
+    letra = chute(certas + erradas)
     if letra in sorteada:
-        certas +=letra
+        certas += letra
     else:
-        erradas +=letra    
+        erradas += letra    
     for c in sorteada:
         if c in certas:
             print(c, end = ' ')

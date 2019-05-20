@@ -40,7 +40,7 @@ while r:
     certas = erradas = ''
     
     while not ganhou(sorteada, certas):
-        print(sorteada)
+        print(sorteada) #deletar
         letra = chute(certas + erradas)
         if letra in sorteada:
             certas += letra
@@ -52,5 +52,6 @@ while r:
             else:
                 print('_', end = ' ')
         desenha(erradas)
+    #acressenatar derrota
     r = jogar_novamente()
 

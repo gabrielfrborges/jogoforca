@@ -39,7 +39,7 @@ certas=erradas=''
 
 ganhou(sorteada,certas)
 
-while not ganhou(sorteada,certas)':
+while not ganhou(sorteada,certas):
     print(sorteada)
     letra = chute(certas+erradas)
     if letra in sorteada:

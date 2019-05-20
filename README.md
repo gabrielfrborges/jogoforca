@@ -6,9 +6,5 @@ Atividade da aula de Algoritmos do Masanori
 
 
 Autores:.
-
-
-Gabriel Borges
-
-
-Isabelle Oliveira
+<li>Gabriel Borges</li>
+<li>Isabelle Oliveira</li>

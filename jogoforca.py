@@ -1,11 +1,9 @@
 url= 'https://www.ime.usp.br/~pf/dicios/br-sem-acentos.txt'
 import requests
+from random import choice
 p = requests.get(url)
 palavras = p.text.lower()
 palavras = palavras.split()
-len(palavras)
-from random import choice
-choice(palavras)
 sorteada = choice(palavras)
 
 def escolhe():

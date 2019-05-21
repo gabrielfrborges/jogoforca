@@ -1,4 +1,4 @@
-## Feito por Isabelle Oliveira e Gabriel Borges
+## Feito por Gabriel Borges e Isabelle Oliveira
 ## 1ºB ADS 201901
 url = 'https://www.ime.usp.br/~pf/dicios/br-sem-acentos.txt'
 import requests
@@ -115,7 +115,7 @@ while r:
                 print(c, end = ' ')
             else:
                 print('_', end = ' ')
-        print()
+        print('\nLetras erradas:',erradas)
         if len(erradas) == (len(forca)-1):
             break
     fim_de_jogo(sorteada, certas)

@@ -1,3 +1,5 @@
+## Feito por Isabelle Oliveira e Gabriel Borges
+## 1ºB ADS 201901
 url = 'https://www.ime.usp.br/~pf/dicios/br-sem-acentos.txt'
 import requests
 from random import choice

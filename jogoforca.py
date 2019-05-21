@@ -52,6 +52,6 @@ while r:
             else:
                 print('_', end = ' ')
         desenha(erradas)
-    #acressenatar derrota
+    #acrescentar derrota
     r = jogar_novamente()
 
